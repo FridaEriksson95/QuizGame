@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">androidLektion3</string>
+    <string name="tv_title">QUIZ</string>
+    <string name="iv_dog">dog</string>
+    <string name="btn_restart">restart</string>
+    <string name="btn_next">next</string>
+</resources>

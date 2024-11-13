@@ -1,0 +1,133 @@
+<com.google.android.material.card.MaterialCardView android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/iv_dog"
+            android:scaleType="centerCrop"
+            app:cardCornerRadius="36dp"
+            app:cardElevation="18dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/quiz_title"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUIZ"
+                android:fontFamily="monospace"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textAppearance="?attr/textAppearanceHeadline6" />
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="QUESTION"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/opt1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textSize="16sp"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/opt2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/red"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+            <Button
+                android:id="@+id/opt3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/red"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:visibility="gone"
+
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/restartButton"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="RESTART QUIZ"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/red"
+                android:textSize="22sp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exitButton"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EXIT"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/red"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
